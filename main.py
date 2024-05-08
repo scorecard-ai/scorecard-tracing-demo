@@ -1,41 +1,15 @@
 import openai
-from openinference.instrumentation.openai import OpenAIInstrumentor
-from opentelemetry import trace
-from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
-from opentelemetry.sdk.resources import SERVICE_NAME, Resource
-from opentelemetry.sdk.trace import TracerProvider
-from opentelemetry.sdk.trace.export import BatchSpanProcessor, ConsoleSpanExporter
 
 from environment.openai_config import OpenAiConfig
 from environment.scorecard_config import ScorecardConfig
 from environment.validate import validate_environment
+from helper import setup
 
 validate_environment()
 openai_config = OpenAiConfig()
 scorecard_config = ScorecardConfig()
 
-OpenAIInstrumentor().instrument()
-
-provider = TracerProvider(
-    resource=Resource(attributes={SERVICE_NAME: "demo-application"})
-)
-
-# Export the trace to the console.
-console_exporter = ConsoleSpanExporter()
-console_processor = BatchSpanProcessor(span_exporter=console_exporter)
-provider.add_span_processor(console_processor)
-
-# Export the trace to the Scorecard Telemetry server.
-otlp_exporter = OTLPSpanExporter(
-    endpoint="https://telemetry.getscorecard.ai:4318/v1/traces",
-    headers={"Authorization": f"Bearer {scorecard_config.telemetry_key}"},
-)
-otlp_processor = BatchSpanProcessor(span_exporter=otlp_exporter)
-provider.add_span_processor(otlp_processor)
-
-trace.set_tracer_provider(provider)
-tracer = trace.get_tracer(instrumenting_module_name=__name__, tracer_provider=provider)
-
+tracer = setup(name="demo-application", scorecard_config=scorecard_config, debug=True)
 client = openai.OpenAI(api_key=openai_config.api_key)
 
 

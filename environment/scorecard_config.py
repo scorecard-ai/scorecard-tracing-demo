@@ -10,3 +10,4 @@ class ScorecardConfig(ValidatedSettings):
         extra = "ignore"
 
     telemetry_key: ValidatedString = ""
+    telemetry_url: ValidatedString = ""
