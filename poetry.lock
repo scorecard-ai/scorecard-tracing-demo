@@ -33,17 +33,17 @@ trio = ["trio (>=0.23)"]
 
 [[package]]
 name = "boto3"
-version = "1.34.100"
+version = "1.34.104"
 description = "The AWS SDK for Python"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "boto3-1.34.100-py3-none-any.whl", hash = "sha256:bbe2bb0dfcd92380da2a2fa2c2f586ba06c118b796380b2d0f3d0ebd103ec28d"},
-    {file = "boto3-1.34.100.tar.gz", hash = "sha256:016f6d66900bb1a835dea2063f1e91fc7057dbf7fb7df8add0706f0da9492631"},
+    {file = "boto3-1.34.104-py3-none-any.whl", hash = "sha256:bec91a3bca63320e5f68a25b5eaa7bab65e35bb9253a544875c2e03679f1d5fb"},
+    {file = "boto3-1.34.104.tar.gz", hash = "sha256:5b37c8f4ea6f408147994a6e230c49ca755da57f5964ccea8b8fd4ff5f11759e"},
 ]
 
 [package.dependencies]
-botocore = ">=1.34.100,<1.35.0"
+botocore = ">=1.34.104,<1.35.0"
 jmespath = ">=0.7.1,<2.0.0"
 s3transfer = ">=0.10.0,<0.11.0"
 
@@ -52,13 +52,13 @@ crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "botocore"
-version = "1.34.100"
+version = "1.34.104"
 description = "Low-level, data-driven core of boto 3."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "botocore-1.34.100-py3-none-any.whl", hash = "sha256:ee516fb9e9e906d311f2a9921afaf79c594db239a5b4b626e89e6960401aad0b"},
-    {file = "botocore-1.34.100.tar.gz", hash = "sha256:513bea60c6531af8e1ae1fdb2947e3ef99712f39c58f4656b5efef9cb6f75a13"},
+    {file = "botocore-1.34.104-py3-none-any.whl", hash = "sha256:b68ed482e9b4c313129c9948af5a91d0e84840558e6d232a1a27ab0b9733e5b9"},
+    {file = "botocore-1.34.104.tar.gz", hash = "sha256:fe36dd3cea4160fbbe27dc1cf89cb7018234350555a26933b2977947052a346a"},
 ]
 
 [package.dependencies]
@@ -334,13 +334,13 @@ files = [
 
 [[package]]
 name = "openai"
-version = "1.26.0"
+version = "1.29.0"
 description = "The official Python library for the openai API"
 optional = false
 python-versions = ">=3.7.1"
 files = [
-    {file = "openai-1.26.0-py3-none-any.whl", hash = "sha256:884ced523fb0225780f8b0e0ed6f7e014049c32d049a41ad0ac962869f1055d1"},
-    {file = "openai-1.26.0.tar.gz", hash = "sha256:642e857b60855702ee6ff665e8fa80946164f77b92e58fd24e01b545685b8405"},
+    {file = "openai-1.29.0-py3-none-any.whl", hash = "sha256:c61cd12376c84362d406341f9e2f9a9d6b81c082b133b44484dc0f43954496b1"},
+    {file = "openai-1.29.0.tar.gz", hash = "sha256:d5a769f485610cff8bae14343fa45a8b1d346be3d541fa5b28ccd040dbc8baf8"},
 ]
 
 [package.dependencies]
@@ -357,13 +357,13 @@ datalib = ["numpy (>=1)", "pandas (>=1.2.3)", "pandas-stubs (>=1.1.0.11)"]
 
 [[package]]
 name = "openinference-instrumentation"
-version = "0.1.5"
+version = "0.1.6"
 description = "OpenInference instrumentation utilities"
 optional = false
 python-versions = "<3.13,>=3.8"
 files = [
-    {file = "openinference_instrumentation-0.1.5-py3-none-any.whl", hash = "sha256:7cb14de85fa24733a2bfe567700ff009dcea00eb92d3ec9ee6f69d4c02c992f5"},
-    {file = "openinference_instrumentation-0.1.5.tar.gz", hash = "sha256:c6f47fe6c94386022e706548d3d5b2b1b29396a61acd3ad3358357c6b381e46c"},
+    {file = "openinference_instrumentation-0.1.6-py3-none-any.whl", hash = "sha256:2e3210a000bdf0b3319c83a466bf7ac1e97e1d93a5da6113781347d2d30b7922"},
+    {file = "openinference_instrumentation-0.1.6.tar.gz", hash = "sha256:15be40b849f7f4499b50c9e0dfed2eaebd0959c33e11c42e3c005065a3cf8ead"},
 ]
 
 [package.dependencies]
@@ -375,16 +375,17 @@ test = ["opentelemetry-sdk"]
 
 [[package]]
 name = "openinference-instrumentation-bedrock"
-version = "0.1.3"
+version = "0.1.5"
 description = "OpenInference Bedrock Instrumentation"
 optional = false
 python-versions = "<3.13,>=3.8"
 files = [
-    {file = "openinference_instrumentation_bedrock-0.1.3-py3-none-any.whl", hash = "sha256:0d285fdfd17bebe3e8aa3060c1eab299feea17fa59fe82bebd6733f1463a3889"},
-    {file = "openinference_instrumentation_bedrock-0.1.3.tar.gz", hash = "sha256:494fc33b8bf0a010b4da416677cbe961cd041f0d4cefe407698d74f9d60f682d"},
+    {file = "openinference_instrumentation_bedrock-0.1.5-py3-none-any.whl", hash = "sha256:a08eabbb5bf979dc1a44a38243360f47b433c47d2ae86135e39dd53fca4e8d24"},
+    {file = "openinference_instrumentation_bedrock-0.1.5.tar.gz", hash = "sha256:97e67c58ee0f6ef883c308c395204d354a3312d547e03b8792c92fdb5f34cba8"},
 ]
 
 [package.dependencies]
+openinference-instrumentation = ">=0.1.5"
 openinference-semantic-conventions = "*"
 opentelemetry-api = "*"
 opentelemetry-instrumentation = "*"
@@ -397,16 +398,17 @@ test = ["boto3 (==1.28.57)", "opentelemetry-instrumentation-httpx", "opentelemet
 
 [[package]]
 name = "openinference-instrumentation-dspy"
-version = "0.1.7"
+version = "0.1.8"
 description = "OpenInference DSPy Instrumentation"
 optional = false
 python-versions = "<3.13,>=3.9"
 files = [
-    {file = "openinference_instrumentation_dspy-0.1.7-py3-none-any.whl", hash = "sha256:93f50fb3e4a74867988f2d03e955f86e744f8f50a68bc61891209a3a6ecb84b0"},
-    {file = "openinference_instrumentation_dspy-0.1.7.tar.gz", hash = "sha256:f92295ab39e5f728d17d475c7215d96085b90b8a5f7c3f5df9318fe2bfa430bf"},
+    {file = "openinference_instrumentation_dspy-0.1.8-py3-none-any.whl", hash = "sha256:0e61e58668d5f70536c6cc832ce6f7cc5661debaec3d0530e610d8645d83c0a7"},
+    {file = "openinference_instrumentation_dspy-0.1.8.tar.gz", hash = "sha256:2ea7b035fecbbdf0797b22c150cdae0bc347e964307087910d176d0dcb873e42"},
 ]
 
 [package.dependencies]
+openinference-instrumentation = ">=0.1.5"
 openinference-semantic-conventions = "*"
 opentelemetry-api = "*"
 opentelemetry-instrumentation = "*"
@@ -420,17 +422,18 @@ test = ["dspy-ai (==2.3.4)", "google-generativeai", "opentelemetry-sdk", "respon
 
 [[package]]
 name = "openinference-instrumentation-langchain"
-version = "0.1.14"
+version = "0.1.15"
 description = "OpenInference LangChain Instrumentation"
 optional = false
 python-versions = "<3.13,>=3.8"
 files = [
-    {file = "openinference_instrumentation_langchain-0.1.14-py3-none-any.whl", hash = "sha256:83e3dac0dbb2c25584110a9647f200765e96a7f04fea79c3e640148cd4c9918a"},
-    {file = "openinference_instrumentation_langchain-0.1.14.tar.gz", hash = "sha256:90049f82f8074a203b4aba0dd833018e20b701740f428baf2f67ba489b566b7e"},
+    {file = "openinference_instrumentation_langchain-0.1.15-py3-none-any.whl", hash = "sha256:5a9058972416d8d1ffd1c0389dd8553c8dea376441b44f75c939a31206605b2f"},
+    {file = "openinference_instrumentation_langchain-0.1.15.tar.gz", hash = "sha256:02145702850f7f16bb6294564b6384f1ca05dead7666a80a6c1113f294d0cdcb"},
 ]
 
 [package.dependencies]
-openinference-semantic-conventions = ">=0.1.3"
+openinference-instrumentation = ">=0.1.5"
+openinference-semantic-conventions = "*"
 opentelemetry-api = "*"
 opentelemetry-instrumentation = "*"
 opentelemetry-semantic-conventions = "*"
@@ -489,16 +492,17 @@ test = ["mistralai", "opentelemetry-instrumentation-httpx", "opentelemetry-sdk",
 
 [[package]]
 name = "openinference-instrumentation-openai"
-version = "0.1.4"
+version = "0.1.5"
 description = "OpenInference OpenAI Instrumentation"
 optional = false
 python-versions = "<3.13,>=3.8"
 files = [
-    {file = "openinference_instrumentation_openai-0.1.4-py3-none-any.whl", hash = "sha256:3c4425a9afbb689d7b62a800ec09889e706f538c062a6fa7cc36f3dfcb07611f"},
-    {file = "openinference_instrumentation_openai-0.1.4.tar.gz", hash = "sha256:36e6c44da54e14e81f54768dda98dce2f2e32b26690a92674f6462e3f9624753"},
+    {file = "openinference_instrumentation_openai-0.1.5-py3-none-any.whl", hash = "sha256:0e7f81d38b8495cd5b98857896a351d888fd81dbc1b30426104422d90458c27e"},
+    {file = "openinference_instrumentation_openai-0.1.5.tar.gz", hash = "sha256:5f025ec203d3f8a5bf75b3b87d471ce33cad0650439005a17492366e537e75e5"},
 ]
 
 [package.dependencies]
+openinference-instrumentation = ">=0.1.5"
 openinference-semantic-conventions = "*"
 opentelemetry-api = "*"
 opentelemetry-instrumentation = "*"
@@ -843,6 +847,34 @@ botocore = ">=1.33.2,<2.0a.0"
 crt = ["botocore[crt] (>=1.33.2,<2.0a.0)"]
 
 [[package]]
+name = "scorecard-ai"
+version = "1.0.0b1"
+description = ""
+optional = false
+python-versions = "<3.13,>=3.9"
+files = [
+    {file = "scorecard_ai-1.0.0b1-py3-none-any.whl", hash = "sha256:bba3233cca542ccba1810b85c995d93596c5342debf864eaae8f4c0c14bfd803"},
+    {file = "scorecard_ai-1.0.0b1.tar.gz", hash = "sha256:c3a4d80c2a01b6c7fa024b6ab31cd7cd3fc77ac721f1aa3cae2f316f2eff5cd4"},
+]
+
+[package.dependencies]
+boto3 = ">=1.34.100,<2.0.0"
+httpx = ">=0.21.2"
+openai = ">=1.21.2,<2.0.0"
+openinference-instrumentation-bedrock = ">=0.1.3,<0.2.0"
+openinference-instrumentation-dspy = ">=0.1.7,<0.2.0"
+openinference-instrumentation-langchain = ">=0.1.14,<0.2.0"
+openinference-instrumentation-llama-index = ">=1.3.0,<2.0.0"
+openinference-instrumentation-mistralai = ">=0.0.5,<0.0.6"
+openinference-instrumentation-openai = ">=0.1.4,<0.2.0"
+opentelemetry-api = ">=1.24.0,<2.0.0"
+opentelemetry-exporter-otlp-proto-http = ">=1.24.0,<2.0.0"
+opentelemetry-sdk = ">=1.24.0,<2.0.0"
+pydantic = ">=1.9.2"
+pydantic-settings = ">=2.2.1,<3.0.0"
+typing_extensions = ">=4.0.0"
+
+[[package]]
 name = "setuptools"
 version = "69.5.1"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
@@ -1025,4 +1057,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.13"
-content-hash = "39bc4e74b85aee991d95d94f3b6b091d564e6bf952239af0ed820ccd4d7cc2d0"
+content-hash = "0e27f7631471cd758286b667ec914a263a6b2fa51dca26c9f81a8f30909f4370"

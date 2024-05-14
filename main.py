@@ -1,9 +1,9 @@
 import openai
+from scorecard.telemetry import setup
 
 from environment.openai_config import OpenAiConfig
 from environment.scorecard_config import ScorecardConfig
 from environment.validate import validate_environment
-from helper import setup
 
 validate_environment()
 openai_config = OpenAiConfig()
