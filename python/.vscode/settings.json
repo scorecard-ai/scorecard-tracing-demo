@@ -4,8 +4,10 @@
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit"
-    }
+    },
+    "editor.tabSize": 4,
   },
+  "git.openRepositoryInParentFolders": "always",
   "isort.args": ["--profile", "black"],
   "python.analysis.typeCheckingMode": "basic",
   "python.testing.pytestArgs": ["tests"],
