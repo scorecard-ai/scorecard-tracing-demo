@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": "./",
+      "name": "root"
+    },
+    {
+      "path": "./python",
+      "name": "python"
+    },
+    {
+      "path": "./node",
+      "name": "node"
+    }
+  ]
+}
