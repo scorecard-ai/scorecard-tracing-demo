@@ -17,6 +17,6 @@
     "@opentelemetry/sdk-trace-node": "^1.24.1",
     "@opentelemetry/semantic-conventions": "^1.24.1",
     "openai": "^4.47.1",
-    "scorecard-ai": "^0.3.0"
+    "scorecard-ai": "file:/Users/nathanhammond/repos/scorecard-ai/scorecard-node/scorecard-ai-v0.3.0.tgz"
   }
 }

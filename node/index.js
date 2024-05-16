@@ -1,4 +1,4 @@
-const { setup } =require('./setup.js');
+const { setup } = require('scorecard-ai/telemetry');
 const OpenAI = require('openai');
 
 // Confirm configuration.
