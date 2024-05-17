@@ -6,8 +6,8 @@
   "author": "Scorecard AI <team@getscorecard.ai>",
   "license": "MIT",
   "packageManager": "pnpm@8.15.5",
-  "type": "commonjs",
   "dependencies": {
+    "@opentelemetry/instrumentation": "latest",
     "openai": "^4.47.1",
     "scorecard-ai": "file:/Users/nathanhammond/repos/scorecard-ai/scorecard-node/scorecard-ai-v0.3.0.tgz"
   }
