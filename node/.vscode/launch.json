@@ -4,13 +4,37 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Run Demo",
+      "name": "Run Demo (CJS)",
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "runtimeArgs": ["--env-file", ".env"],
+      "runtimeArgs": ["--env-file=.env"],
       "cwd": "${workspaceFolder}",
-      "program": "index.js"
+      "program": "index.cjs"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run Demo (ESM)",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "runtimeArgs": ["--env-file=.env"],
+      "cwd": "${workspaceFolder}",
+      "program": "index.mjs"
+    },
+    // This launch configuration _does not work_.
+    // ESM support for autoinstrumentation is blocked on upstream changes.
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Test ESM Autoinstrumentation",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "runtimeArgs": ["--env-file=.env", "--loader=@opentelemetry/instrumentation/hook.mjs"],
+      "cwd": "${workspaceFolder}",
+      "program": "test.mjs"
     }
   ]
 }

@@ -1,5 +1,5 @@
-const { setup } =require('./setup.js');
-const OpenAI = require('openai');
+import { setup } from 'scorecard-ai/telemetry.js';
+import { OpenAI } from 'openai';
 
 // Confirm configuration.
 const REQUIRED_ENV_VARS = [
