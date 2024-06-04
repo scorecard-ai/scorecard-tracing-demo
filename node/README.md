@@ -20,6 +20,9 @@ You can find a complete example in [`index.cjs`](index.cjs).
 
 ES Modules specify that imported modules are immutable. This means that every single file which imports `openai` must trigger autoinstrumentation.
 
+If you wish to use ESM, you must manually perform some tasks within your application and cannot rely on them being completed by the helper script:
+`npm install --save @arizeai/openinference-instrumentation-openai`
+
 ```js
 import { setup } from 'scorecard-ai/telemetry.js';
 import { OpenAI } from 'openai';

@@ -9,6 +9,9 @@
   "dependencies": {
     "@opentelemetry/instrumentation": "latest",
     "openai": "^4.47.1",
-    "scorecard-ai": "file:/Users/nathanhammond/repos/scorecard-ai/scorecard-node/scorecard-ai-v0.3.0.tgz"
+    "scorecard-ai": "^0.5.3"
+  },
+  "devDependencies": {
+    "@arizeai/openinference-instrumentation-openai": "*"
   }
 }
