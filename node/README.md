@@ -24,10 +24,13 @@ If you wish to use ESM, you must manually perform some tasks within your applica
 `npm install --save @arizeai/openinference-instrumentation-openai`
 
 ```js
-import { setup } from 'scorecard-ai/telemetry.js';
+// Extra instrumentation steps that must be performed in every file.
 import { OpenAI } from 'openai';
 import { OpenAIInstrumentation } from '@arizeai/openinference-instrumentation-openai';
 new OpenAIInstrumentation().manuallyInstrument(OpenAI);
+
+// Standard 
+import { setup } from 'scorecard-ai/telemetry.js';
 const tracer = setup('application-name', {
   telemetryUrl: process.env['SCORECARD_TELEMETRY_URL'],
   telemetryKey: process.env['SCORECARD_TELEMETRY_KEY'],
