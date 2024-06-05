@@ -11,7 +11,7 @@ python = ">=3.11,<3.13"
 openai = "^1.21.2"
 pydantic = "^2.7.0"
 pydantic-settings = "^2.2.1"
-scorecard-ai = "^1.0.0b1"
+scorecard-ai = {version = "^1.0.0b5", extras = ["telemetry", "instrument-openai"]}
 
 
 [build-system]
