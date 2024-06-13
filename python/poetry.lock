@@ -654,13 +654,13 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
 name = "scorecard-ai"
-version = "1.0.0b5"
+version = "1.0.0b6"
 description = ""
 optional = false
 python-versions = "<3.13,>=3.9"
 files = [
-    {file = "scorecard_ai-1.0.0b5-py3-none-any.whl", hash = "sha256:8ac5af9d55dc089c624a831520bfe2fff9a386241901d77b973100acf926355a"},
-    {file = "scorecard_ai-1.0.0b5.tar.gz", hash = "sha256:a6790bde9c21fba91699f51dc7880e7c16cd20f4c0035effc593e0b815712716"},
+    {file = "scorecard_ai-1.0.0b6-py3-none-any.whl", hash = "sha256:c93eee0059a7ce6cb5f0c25ed933d1704e071a011eadd4def19db2fedab959dd"},
+    {file = "scorecard_ai-1.0.0b6.tar.gz", hash = "sha256:3500d28a6fe44120321f0b6598b2e738d4e240bf502b4005ab3702b7ce3675e8"},
 ]
 
 [package.dependencies]
@@ -853,4 +853,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.11,<3.13"
-content-hash = "a431b3f909be6e7fb290075257ce24cbeeed2b6ed52c431452556a69731a5e38"
+content-hash = "78d41c8e58ca3357d2764af118f7c7944fd58104e86dbc7d7793dac7ea2de574"

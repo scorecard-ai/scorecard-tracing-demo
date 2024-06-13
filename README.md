@@ -17,6 +17,7 @@ Configuration should be placed in `scorecard-tracing-demo/python/.env` and `scor
 
 ```sh
 OPENAI_API_KEY=
+SCORECARD_API_KEY=
 SCORECARD_TELEMETRY_KEY=
 SCORECARD_TELEMETRY_URL=https://telemetry.getscorecard.ai:4318
 ```

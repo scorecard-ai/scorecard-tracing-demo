@@ -9,7 +9,7 @@
   "dependencies": {
     "@opentelemetry/instrumentation": "latest",
     "openai": "^4.47.1",
-    "scorecard-ai": "^0.5.3"
+    "scorecard-ai": "^0.5.4"
   },
   "devDependencies": {
     "@arizeai/openinference-instrumentation-openai": "*"

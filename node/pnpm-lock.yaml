@@ -12,8 +12,8 @@ dependencies:
     specifier: ^4.47.1
     version: 4.47.1
   scorecard-ai:
-    specifier: ^0.5.3
-    version: 0.5.3(@arizeai/openinference-instrumentation-langchain@0.0.5)(@arizeai/openinference-instrumentation-openai@0.2.0)(@opentelemetry/api@1.8.0)(@opentelemetry/exporter-trace-otlp-http@0.51.1)(@opentelemetry/instrumentation@0.51.1)(@opentelemetry/resources@1.24.1)(@opentelemetry/sdk-trace-node@1.24.1)(@opentelemetry/semantic-conventions@1.24.1)(openai@4.47.1)
+    specifier: ^0.5.4
+    version: 0.5.4(@arizeai/openinference-instrumentation-langchain@0.0.5)(@arizeai/openinference-instrumentation-openai@0.2.0)(@opentelemetry/api@1.8.0)(@opentelemetry/core@1.25.0)(@opentelemetry/exporter-trace-otlp-http@0.51.1)(@opentelemetry/instrumentation@0.51.1)(@opentelemetry/resources@1.24.1)(@opentelemetry/sdk-trace-node@1.24.1)(@opentelemetry/semantic-conventions@1.25.0)(openai@4.47.1)
 
 devDependencies:
   '@arizeai/openinference-instrumentation-openai':
@@ -27,7 +27,7 @@ packages:
     dependencies:
       '@arizeai/openinference-semantic-conventions': 0.4.0
       '@opentelemetry/api': 1.8.0
-      '@opentelemetry/core': 1.24.1(@opentelemetry/api@1.8.0)
+      '@opentelemetry/core': 1.25.0(@opentelemetry/api@1.8.0)
       '@opentelemetry/instrumentation': 0.46.0(@opentelemetry/api@1.8.0)
     transitivePeerDependencies:
       - supports-color
@@ -74,6 +74,16 @@ packages:
     dependencies:
       '@opentelemetry/api': 1.8.0
       '@opentelemetry/semantic-conventions': 1.24.1
+
+  /@opentelemetry/core@1.25.0(@opentelemetry/api@1.8.0):
+    resolution: {integrity: sha512-n0B3s8rrqGrasTgNkXLKXzN0fXo+6IYP7M5b7AMsrZM33f/y6DS6kJ0Btd7SespASWq8bgL3taLo0oe0vB52IQ==}
+    engines: {node: '>=14'}
+    peerDependencies:
+      '@opentelemetry/api': '>=1.0.0 <1.10.0'
+    dependencies:
+      '@opentelemetry/api': 1.8.0
+      '@opentelemetry/semantic-conventions': 1.25.0
+    dev: false
 
   /@opentelemetry/exporter-trace-otlp-http@0.51.1(@opentelemetry/api@1.8.0):
     resolution: {integrity: sha512-n+LhLPsX07URh+HhV2SHVSvz1t4G/l/CE5BjpmhAPqeTceFac1VpyQkavWEJbvnK5bUEXijWt4LxAxFpt2fXyw==}
@@ -232,6 +242,11 @@ packages:
   /@opentelemetry/semantic-conventions@1.24.1:
     resolution: {integrity: sha512-VkliWlS4/+GHLLW7J/rVBA00uXus1SWvwFvcUDxDwmFxYfg/2VI6ekwdXS28cjI8Qz2ky2BzG8OUHo+WeYIWqw==}
     engines: {node: '>=14'}
+
+  /@opentelemetry/semantic-conventions@1.25.0:
+    resolution: {integrity: sha512-M+kkXKRAIAiAP6qYyesfrC5TOmDpDVtsxuGfPcqd9B/iBrac+E14jYwrgm0yZBUIbIP2OnqC3j+UgkXLm1vxUQ==}
+    engines: {node: '>=14'}
+    dev: false
 
   /@types/node-fetch@2.6.11:
     resolution: {integrity: sha512-24xFj9R5+rfQJLRyM56qh+wnVSYhyXC2tkoBndtY0U+vubqNsYXGjufB2nn8Q6gt0LrARwL6UBtMCSVCwl4B1g==}
@@ -533,13 +548,14 @@ packages:
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
-  /scorecard-ai@0.5.3(@arizeai/openinference-instrumentation-langchain@0.0.5)(@arizeai/openinference-instrumentation-openai@0.2.0)(@opentelemetry/api@1.8.0)(@opentelemetry/exporter-trace-otlp-http@0.51.1)(@opentelemetry/instrumentation@0.51.1)(@opentelemetry/resources@1.24.1)(@opentelemetry/sdk-trace-node@1.24.1)(@opentelemetry/semantic-conventions@1.24.1)(openai@4.47.1):
-    resolution: {integrity: sha512-vXiV2LI6efXRLU/WD0v/uCUVkS755jKxMceg+923IHem3buvi4lh5tV0EsWUy5JfobMI5krw+KDqcVeJmoRCiQ==}
+  /scorecard-ai@0.5.4(@arizeai/openinference-instrumentation-langchain@0.0.5)(@arizeai/openinference-instrumentation-openai@0.2.0)(@opentelemetry/api@1.8.0)(@opentelemetry/core@1.25.0)(@opentelemetry/exporter-trace-otlp-http@0.51.1)(@opentelemetry/instrumentation@0.51.1)(@opentelemetry/resources@1.24.1)(@opentelemetry/sdk-trace-node@1.24.1)(@opentelemetry/semantic-conventions@1.25.0)(openai@4.47.1):
+    resolution: {integrity: sha512-i/RRpzFuhTFfzpiP95HrPyLAGLLJfA48lvH/drZn5h3Jtpb7knwxBVBqCoxwYlFtrrNwyMIuR8u9f852TPgzVQ==}
     peerDependencies:
       '@arizeai/openinference-instrumentation-langchain': ^0.0.5
       '@arizeai/openinference-instrumentation-openai': ^0.2.0
       '@langchain/core': ^0.1.63
       '@opentelemetry/api': '*'
+      '@opentelemetry/core': '*'
       '@opentelemetry/exporter-trace-otlp-http': '*'
       '@opentelemetry/instrumentation': '>=0.40.0'
       '@opentelemetry/resources': '*'
@@ -555,11 +571,12 @@ packages:
       '@arizeai/openinference-instrumentation-langchain': 0.0.5
       '@arizeai/openinference-instrumentation-openai': 0.2.0
       '@opentelemetry/api': 1.8.0
+      '@opentelemetry/core': 1.25.0(@opentelemetry/api@1.8.0)
       '@opentelemetry/exporter-trace-otlp-http': 0.51.1(@opentelemetry/api@1.8.0)
       '@opentelemetry/instrumentation': 0.51.1(@opentelemetry/api@1.8.0)
       '@opentelemetry/resources': 1.24.1(@opentelemetry/api@1.8.0)
       '@opentelemetry/sdk-trace-node': 1.24.1(@opentelemetry/api@1.8.0)
-      '@opentelemetry/semantic-conventions': 1.24.1
+      '@opentelemetry/semantic-conventions': 1.25.0
       form-data: 4.0.0
       formdata-node: 6.0.3
       node-fetch: 2.7.0

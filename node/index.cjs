@@ -1,9 +1,11 @@
+const { ScorecardClient } = require('scorecard-ai');
 const { setup } = require('scorecard-ai/telemetry');
 const OpenAI = require('openai');
 
 // Confirm configuration.
 const REQUIRED_ENV_VARS = [
   'OPENAI_API_KEY',
+  'SCORECARD_API_KEY',
   'SCORECARD_TELEMETRY_KEY',
   'SCORECARD_TELEMETRY_URL',
 ];
@@ -11,6 +13,8 @@ const missingEnvVars = REQUIRED_ENV_VARS.filter((envVariable) => !process.env[en
 if (missingEnvVars.length > 0) {
   throw new Error(`Missing required environment variables: ${missingEnvVars.join(', ')}`)
 }
+
+const scorecard = new ScorecardClient();
 
 const tracer = setup('demo-application', {
   telemetryUrl: process.env['SCORECARD_TELEMETRY_URL'],
@@ -37,6 +41,10 @@ async function call_llm(content) {
 
 async function main() {
   return tracer.startActiveSpan('main', async (span) => {
+    try {
+      await scorecard.run.get(1);
+    } catch (e) {
+    }
     await call_llm('Write a haiku.');
     await call_llm('Write an acrostic for the word Scorecard.');
     await call_llm('Write a limerick.');
